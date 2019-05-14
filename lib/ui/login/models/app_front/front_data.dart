@@ -11,4 +11,9 @@ class FrontData {
       : status = map["status"],
         message = map["message"],
         data = Data.fromJson(map["data"]);
+
+  FrontData.withError(String error)
+      : status = false,
+        message = error,
+        data = null;
 }

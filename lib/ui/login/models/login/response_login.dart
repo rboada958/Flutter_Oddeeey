@@ -11,4 +11,10 @@ class ResponseLogin {
       : status = map["status"],
         message = map["message"],
         data = Login.fromJsonMap(map["data"]);
+
+
+  ResponseLogin.withError(String error)
+      : status = false,
+        message = error,
+        data = null;
 }

@@ -1,3 +1,4 @@
+import 'package:flutter_social/ui/login/models/app_front/data.dart';
 import 'package:intl/intl.dart';
 
 import 'package:flutter/material.dart';
@@ -5,6 +6,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 class Utils {
   String _token;
+  Data _data;
 
   void setApiToken(String token) {
     this._token = token;
@@ -12,6 +14,14 @@ class Utils {
 
   String getApiToken() {
     return this._token;
+  }
+
+  void setData(Data data) {
+    _data = data;
+  }
+
+  Data getData() {
+    return _data;
   }
 }
 

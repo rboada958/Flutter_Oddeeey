@@ -1,4 +1,5 @@
 import 'package:flutter_social/ui/login/models/app_front/front_data.dart';
+import 'package:flutter_social/ui/login/models/login/request_login.dart';
 import 'package:flutter_social/ui/login/models/login/response_login.dart';
 import 'package:flutter_social/ui/login/models/register/response_register.dart';
 import 'package:flutter_social/ui/login/repository/repositoy_login.dart';
@@ -35,9 +36,8 @@ class LoginBloc {
     _postLogin.sink.add(data);
   }
 
-  postLoginGoogle(googleId, name, lastName, socialPhoto, email) async {
-    ResponseLogin data = await _repository.postLoginGoogle(
-        googleId, name, lastName, socialPhoto, email);
+  postLoginGoogle(RequestLogin request) async {
+    ResponseLogin data = await _repository.postLoginGoogle(request);
     _postLoginGoogle.sink.add(data);
   }
 

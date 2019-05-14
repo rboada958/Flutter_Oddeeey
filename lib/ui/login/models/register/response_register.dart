@@ -11,4 +11,9 @@ class ResponseRegister {
       : status = map["status"],
         message = map["message"],
         data = Register.fromJsonMap(map["data"]);
+
+  ResponseRegister.withError(String error)
+      : status = false,
+        message = error,
+        data = null;
 }

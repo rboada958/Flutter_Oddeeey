@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_social/ui/splash.dart';
+import 'package:flutter_social/ui/splash/splash_screen.dart';
 
 void main() {
   runApp(

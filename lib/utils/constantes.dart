@@ -33,3 +33,6 @@ String continueGoogle = "Continue with Google       ";
 String continueEmail = "Continue with Email          ";
 
 String byClick = "By clicking continue, I accept the terms & conditions";
+
+String messageSuccess = "Datos del front han sido entregados";
+String loginSuccess = "Usuario Logueado con Exito";
